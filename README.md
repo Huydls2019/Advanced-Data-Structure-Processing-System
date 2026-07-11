@@ -1,17 +1,17 @@
 # Advanced Data Structure Processing System ⚡
 
-A high-performance C++ core engine engineered to resolve algorithmic bottlenecks in large-scale backend infrastructures. This project implements custom low-latency Graph networks, Binary Search Trees (BST), and optimized Hash Tables from scratch, bypassing standard container overhead to ensure minimal memory footprint thresholds.
+A high-performance, modern C++ In-Memory Cache Engine engineered with a custom Chaining Hash Table and an automated LRU (Least Recently Used) eviction policy. Built completely from scratch without STL container overhead to achieve ultra-low microsecond latency.
 
-## 📊 Performance Metrics & Outcomes
-* **Query Latency:** Sub-millisecond execution for complex structural retrieval.
-* **Memory Footprint:** Significantly minimized compared to heavy STL structures through strict pointer manipulation.
-* **Core Stack:** C++17, Memory Analytics, Git.
+## 📊 Core Architecture & Modern Enhancements
+* **Memory Management:** Zero raw `new/delete` leaks by migrating to modern C++ smart pointers (`std::unique_ptr`).
+* **Algorithmic Mechanics:** Custom DJB2 hashing algorithm integrated with dynamic doubly-linked lists for $O(1)$ eviction capability.
+* **Latency Benchmarks:** High-resolution sub-microsecond micro-benchmarking engine execution.
 
 ## 🗂️ Project Structure
 ```text
 ├── include/
-│   ├── HashTable.hpp      # Custom chaining hash table for low-overhead lookup
-│   └── Graph.hpp          # Memory-efficient adjacency list graph matrix
+│   ├── HashTable.hpp      # Smart-pointer-driven chaining hash map
+│   └── LRUCache.hpp       # Real-time cache eviction orchestration core
 ├── src/
-│   └── main.cpp           # System benchmark and latency execution loop
+│   └── main.cpp           # High-precision benchmark runtime loop
 └── README.md
